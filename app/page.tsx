@@ -5,33 +5,22 @@ import {
   Container,
   Box,
   Text,
-  Table,
-  Thead,
-  Tbody,
-  Tr,
-  Th,
-  Td,
   Image,
   Spinner,
   Center,
-  HStack,
   Skeleton,
   Button,
   useToast,
-  Link as ChakraLink,
   Flex,
   SimpleGrid,
   useBreakpointValue,
-  SkeletonText,
 } from "@chakra-ui/react";
-import { ExternalLinkIcon, ViewIcon } from "@chakra-ui/icons";
 import { useRouter } from "next/navigation";
 import { createPublicClient, http, Address } from "viem";
 import { createDrift } from "@delvtech/drift";
 import { viemAdapter } from "@delvtech/drift-viem";
 import { ReadFlaunchSDK, resolveIPFS } from "@flaunch/sdk";
 import { chainIdToRpcUrl, chains } from "@/data/chains";
-import { MotionTr } from "@/components/MotionTr";
 import { motion } from "framer-motion";
 
 // Grid view token card component
