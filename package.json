@@ -17,7 +17,7 @@
     "@delvtech/drift-viem": "0.3.0",
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
-    "@flaunch/sdk": "^0.4.1",
+    "@flaunch/sdk": "^0.4.2",
     "@fortawesome/fontawesome-svg-core": "^6.7.2",
     "@fortawesome/free-brands-svg-icons": "^6.7.2",
     "@fortawesome/free-solid-svg-icons": "^6.7.2",
