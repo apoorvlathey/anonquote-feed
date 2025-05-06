@@ -7,10 +7,6 @@ const ManagerPageContent = dynamic(
   }
 );
 
-export default function Page({
-  params,
-}: {
-  params: { chainKey: string; manager: string };
-}) {
-  return <ManagerPageContent params={params} />;
+export default function Page() {
+  return <ManagerPageContent />;
 }
