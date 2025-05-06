@@ -89,14 +89,25 @@ const TokenCard = ({
           p={4}
           borderRadius="xl"
         >
-          <Text
+          <Flex
             fontSize={{ base: "md", md: "xl" }}
             fontWeight="bold"
             color="white"
             textAlign="center"
+            justifyContent="center"
+            alignItems="center"
           >
-            {token.metadata?.symbol ? `$${token.metadata.symbol}` : "-"}
-          </Text>
+            {token.metadata?.symbol ? (
+              <>
+                <Text>$</Text>
+                <Text bg="black" px={1} borderRadius="sm">
+                  {token.metadata.symbol}
+                </Text>
+              </>
+            ) : (
+              "-"
+            )}
+          </Flex>
           <Text
             fontSize={{ base: "sm", md: "md" }}
             color="whiteAlpha.800"
